@@ -1,6 +1,3 @@
-GREEN=\033[0;1;92m
-NC=\033[0m
-
 build: FORCE
 	rm -fr logs # Old version log files
 	mkdir -p build
@@ -17,6 +14,6 @@ build: FORCE
 	cp cmake-build-release/libdevbnd.so build/
 	cp tools/nr-binder build/
 
-	@printf "${GREEN}UERANSIM successfully built.${NC}\n"
+	@printf "UERANSIM successfully built.\n"
 
 FORCE:
